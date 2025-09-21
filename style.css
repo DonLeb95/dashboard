@@ -77,4 +77,20 @@ Charcoal Black #0A0A0A
     border: 2px solid red;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects{
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px,1fr));
+}
+
+.right-content{
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
