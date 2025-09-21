@@ -1,3 +1,8 @@
+@font-face {
+    font-family: neonova;
+    src: url(media/neonova-font/neonova.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +13,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    color: #FF00FF;
 }
 /*color palette
 Electric Cyan #00FFFF
@@ -35,6 +41,14 @@ Charcoal Black #0A0A0A
 
     display: grid;
     grid-template-rows: 0.5fr 1fr 5fr;
+    background-color: #0A0A0A;
+    font-family: neonova;
+}
+
+img[src*="icons"]{
+    height: 1.5rem;
+    width: auto;
+        
 }
 /*
 .nav-sb{
@@ -51,6 +65,7 @@ Charcoal Black #0A0A0A
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+
 .user-greeting{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -71,7 +86,9 @@ Charcoal Black #0A0A0A
         grid-row: 2 / 3;
         grid-column: 2;
     }
-
+.header, .content{
+    background-color: #2E005F;
+}
 
 .content{
     border: 2px solid red;
